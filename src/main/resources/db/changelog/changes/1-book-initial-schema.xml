@@ -1,0 +1,24 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+        http://www.liquibase.org/xml/ns/pro
+        http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+
+    <changeSet id="1" author="rramawickrama">
+        <sql>
+            CREATE TABLE public.Book(
+                id SERIAL PRIMARY KEY,
+                name VARCHAR(50) NOT NULL,
+                genre VARCHAR(50),
+                author VARCHAR(50)
+            );
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>

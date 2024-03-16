@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "91360804-c803-4ed1-96b4-34542a6250b7",
+		"name": "DemoLiquibaseWithSpringBoot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33031866"
+	},
+	"item": [
+		{
+			"name": "Get Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
